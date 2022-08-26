@@ -23,11 +23,13 @@ p{
 .header{
     background-color: var(--white-color);
     font-weight: 500;
-    border-bottom: solid 1px #ECECEC;
+    
 
 }
 .head{
-    display: flex;}
+    display: flex;
+    border-bottom: solid 1px #ECECEC;
+}
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -66,6 +68,7 @@ h1,h2,h3,h4,h5,h6{
     
     
 }
+
 .contact+.contact{
     margin-left: 50px;
 }
@@ -93,6 +96,16 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.19;
     color: var(--black-color);
 }
+.icon-header{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    
+}
+.icon-header:hover,
+.icon-header:focus{
+    fill: var(--accent-color);
+}
 .nav{
 
     font-weight: 500;
@@ -118,7 +131,11 @@ h1,h2,h3,h4,h5,h6{
    
 }
 .hero{
-    background-color: var(--second-background-color);
+    /* background-color: var(--second-background-color); */
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
     flex-direction: column;
     text-align: center;
     padding-top: 200px;
@@ -169,6 +186,14 @@ h1,h2,h3,h4,h5,h6{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;}
+    .icon{
+     display: block;
+     background-color:var(--second-body-color);
+     margin-bottom: 30px;
+     width: 270px;
+     height: 120px;  
+     padding: 25px 100px;
+    }
 .text{
     
     font-size: 14px;
@@ -178,6 +203,7 @@ h1,h2,h3,h4,h5,h6{
 .benefits{
     width: calc((100% - 90px)/4);
     margin-right: 30px;
+   
 }
 .benefits:nth-child(4n){
     margin-right: 0px;
@@ -212,10 +238,20 @@ background-color: var(--second-body-color);
    
     display: flex;
     margin: var(--margin-none);
-  
-
-    
 }
+ .team-contact{
+    margin: var(--margin-none);
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+ }
+ .team-link{
+    text-decoration: none;
+ }
+ .icons-team{
+    width: 44px;
+    height: 44px;
+ }
 .team-elements {
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
