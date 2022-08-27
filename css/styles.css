@@ -96,8 +96,12 @@ h1,h2,h3,h4,h5,h6{
 .link:hover{
     color: var(--accent-color);
 }
-.link:focus {
+.link:focus{
     color: var(--accent-color);
+}
+.link:active{
+    color: var(--accent-color);
+
 }
 .link-logo{
     margin-right: 93px;
@@ -367,6 +371,7 @@ background-color: var(--second-body-color);
 .button-portfolio:focus{
     background-color: var(--accent-color);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list-style-portfolio{
     list-style: none;
@@ -397,6 +402,11 @@ background-color: var(--second-body-color);
     width: calc(100% /3 - var(--column-gap));
     margin-right: var(--column-gap);
     margin-bottom: var(--column-gap);
+}
+.net:hover,
+.net:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .net:nth-child(3n){
     margin-right: var(--margin-none);
