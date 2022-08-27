@@ -9,6 +9,7 @@
     --black-color: #000000;
     --column-gap: 30px;
     --margin-none: 0px;
+    --icons-color:#AFB1B8;
    
 }
 body{
@@ -57,6 +58,9 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
+    color: var(--primary-text-color);
+    fill: currentColor;
+    
 
 }
 .header-contacts{
@@ -64,17 +68,24 @@ h1,h2,h3,h4,h5,h6{
     padding: 0px;
     margin: var(--margin-none);
     margin-left: auto;
-   
-    
+    color: var(--primary-text-color);
+    fill: currentColor;
+
     
 }
 
 .contact+.contact{
     margin-left: 50px;
 }
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
 .link-header:hover,
 .link-header:focus{
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .link{
     text-decoration: none;
@@ -97,9 +108,8 @@ h1,h2,h3,h4,h5,h6{
     color: var(--black-color);
 }
 .icon-header{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+    margin-right: 9px;
+    fill: currentColor;
     
 }
 .icon-header:hover,
@@ -186,13 +196,15 @@ h1,h2,h3,h4,h5,h6{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;}
-    .icon{
-     display: block;
-     background-color:var(--second-body-color);
-     margin-bottom: 30px;
-     width: 270px;
-     height: 120px;  
-     padding: 25px 100px;
+
+.icon{
+
+    display: block;
+    background-color:var(--second-body-color);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;  
+    padding: 25px 100px;
     }
 .text{
     
@@ -244,16 +256,36 @@ background-color: var(--second-body-color);
     display: flex;
     column-gap: 10px;
     justify-content: center;
+    
+    margin-top: 10px;
  }
  .team-link{
-    text-decoration: none;
+    text-decoration: none; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icons-color);
+    fill: currentColor;
     
     
  }
+ .team-link:hover{
+   background-color: var(--accent-color);
+   fill: var(--white-color);
+   border-radius: 50%;
+ }
+
  .icons-team{
- width: 44px;
- height: 44px;
+   width: 44px;
+   height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
  }
+
 
 .team-elements {
     background-color: var(--white-color);
@@ -370,7 +402,41 @@ background-color: var(--second-body-color);
     margin-right: var(--margin-none);
 }
 
+.client{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.icon-client{
+    color: var(--icons-color);
+    fill: currentColor;
+    
+}
+.icon-clients{
+    fill: currentColor;
+}
+.link-client:hover,
+.link-client:focus{
+    color: var(--accent-color);
+    border:1px solid var(--accent-color);
 
+}
+.link-client{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons-client{
+    display: flex;
+    column-gap:var(--column-gap) ;
+}
 .footer{
     background-color: var(--second-background-color);
     color: var(--white-color);
@@ -410,4 +476,54 @@ background-color: var(--second-body-color);
 margin-bottom: 9px;
 }
    
-    
+.join-in{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+
+}
+.join-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color) ;
+    fill: currentColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+
+}
+    .join-contact {
+    margin: var(--margin-none);
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;}
+
+.join-link:hover {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+    border-radius: 50%;
+}
+
+.icons-footer {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+}
+.join-style{
+    padding-top: 12px;
+}
+.style-footer{
+    display: flex;
+    column-gap: 70px;
+}
