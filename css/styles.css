@@ -345,6 +345,7 @@ background-color: var(--second-body-color);
     font-size: 16px;
     line-height: 1.87;
     margin: var(--margin-none);
+    display: block;
 }
 .title-portfolio{
     font-weight: 700;
@@ -408,11 +409,12 @@ background-color: var(--second-body-color);
     margin-right: var(--column-gap);
     margin-bottom: var(--column-gap);
 }
-.net:hover,
-.net:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-link:hover,.portfolio-link:focus
+{
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+
 .net:nth-child(3n){
     margin-right: var(--margin-none);
 }
