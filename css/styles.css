@@ -117,7 +117,7 @@ h1,h2,h3,h4,h5,h6{
     color: var(--black-color);
 }
 .icon-header{
-    margin-right: 9px;
+    margin-right: 10px;
     fill: currentColor;
     
 }
@@ -424,6 +424,7 @@ background-color: var(--second-body-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-bottom: 50px;
 }
 .icon-client{
     color: var(--icons-color);
