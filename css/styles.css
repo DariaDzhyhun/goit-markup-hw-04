@@ -24,12 +24,13 @@ p{
 .header{
     background-color: var(--white-color);
     font-weight: 500;
+    border-bottom: solid 1px #ECECEC;
     
 
 }
 .head{
     display: flex;
-    border-bottom: solid 1px #ECECEC;
+    
 }
 .container{
     width: 1200px;
